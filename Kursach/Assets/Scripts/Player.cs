@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     public float movementSpeed = 10.0f;
     public float jumpForce = 16.0f;
     public float groundCheckRadius;
-
+    
 
     public Transform groundCheck;
 
@@ -120,7 +120,7 @@ public class Player : MonoBehaviour
 
     private void ApplyMovement()
     {
-        rb.velocity = new Vector2(movementSpeed * movementInputDirectoin, rb. velocity.y);
+            rb.velocity = new Vector2(movementSpeed * movementInputDirectoin, rb.velocity.y);
     }
 
     private void Flip()
@@ -133,4 +133,6 @@ public class Player : MonoBehaviour
     {
         Gizmos.DrawSphere(groundCheck.position, groundCheckRadius);
     }
+
+
 }
