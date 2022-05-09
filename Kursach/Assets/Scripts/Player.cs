@@ -123,6 +123,17 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector2(movementSpeed * movementInputDirectoin, rb.velocity.y);
     }
 
+  /*  private void DisableFlip()
+    {
+        canFlip = false;
+
+    }
+
+    private void EnableFlip()
+    {
+        canFlip = true;
+    }
+  */
     private void Flip()
     {
         isFacingRight = !isFacingRight;
