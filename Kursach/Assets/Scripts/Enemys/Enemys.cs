@@ -57,7 +57,7 @@ public class Enemys : MonoBehaviour
         alive = transform.Find("Alive").gameObject;
         aliveRb = alive.GetComponent<Rigidbody2D>();
         facingDirection = 1;
-
+        currentHP = maxHP;
         aliveAnim = alive.GetComponent<Animator>();
     }
 
@@ -97,6 +97,7 @@ public class Enemys : MonoBehaviour
         else
         {
             move.Set(moveSpeed * facingDirection, aliveRb.velocity.y);
+
             aliveRb.velocity = move;
         }
     }
@@ -111,6 +112,7 @@ public class Enemys : MonoBehaviour
     {
         knockbackStartTime = Time.time;
         move.Set(knockbackSpeed.x * damageDirection, knockbackSpeed.y);
+        
         aliveRb.velocity = move;
         aliveAnim.SetBool("Knockback", true);
     }
@@ -193,6 +195,10 @@ public class Enemys : MonoBehaviour
         {
             damageDirection = -1;
         }
+        else 
+        {
+            damageDirection = 1;
+        }
 
         if(currentHP > 0.0f)
         {
@@ -208,7 +214,8 @@ public class Enemys : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawLine(groundCheck.position, new Vector2(groundCheck.position.x, groundCheck.position.y - groundCheckDist));
-        Gizmos.DrawLine(wallCheck.position, new Vector2(wallCheck.position.x + wallCheckDist, wallCheck.position.y));
+       // Gizmos.DrawLine(wallCheck.position, new Vector2(wallCheck.position.x + wallCheckDist, wallCheckDist));
+        Gizmos.DrawLine(wallCheck.position, new Vector2(wallCheck.position.x, wallCheck.position.y - wallCheckDist));
 
     }
 }
