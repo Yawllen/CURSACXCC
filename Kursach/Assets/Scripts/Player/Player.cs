@@ -15,6 +15,15 @@ public class Player : MonoBehaviour
     private bool isWalking;
     private bool isGrounded;
     private bool canJump;
+    private bool knockback;
+
+    private float knockbackTime;
+
+    [SerializeField]
+    private float knockbackDuration;
+
+    [SerializeField]
+    private Vector2 knockbackSpeed;
 
     public int amountOfJumps = 1;
     public float movementSpeed = 10.0f;
@@ -32,6 +41,8 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         amountOfJumpsLeft = amountOfJumps;
+
+        
     }
 
     // Update is called once per frame
@@ -41,6 +52,7 @@ public class Player : MonoBehaviour
         CheckMovementDirection();
         UpdateAnimatoins();
         CheckIfCanJump();
+        CheckKnockback();
     }
 
     private void FixedUpdate()
@@ -120,6 +132,7 @@ public class Player : MonoBehaviour
 
     private void ApplyMovement()
     {
+        if(!knockback)
             rb.velocity = new Vector2(movementSpeed * movementInputDirectoin, rb.velocity.y);
     }
 
@@ -136,8 +149,11 @@ public class Player : MonoBehaviour
   */
     private void Flip()
     {
-        isFacingRight = !isFacingRight;
-        transform.Rotate(0.0f, 180.0f, 0.0f);
+        if(!knockback)
+        {
+            isFacingRight = !isFacingRight;
+            transform.Rotate(0.0f, 180.0f, 0.0f);
+        }
     }
 
     private void OnDrawGizmos()
@@ -145,5 +161,19 @@ public class Player : MonoBehaviour
         Gizmos.DrawSphere(groundCheck.position, groundCheckRadius);
     }
 
+    public void Knockback(int direction)
+    {
+        knockback = true;
+        knockbackTime = Time.time;
+        rb.velocity = new Vector2(knockbackSpeed.x * direction, knockbackSpeed.y);
+    }
 
+    public void CheckKnockback()
+    {
+        if (Time.time >= knockbackTime + knockbackDuration && knockback)
+        {
+            knockback = false;
+            rb.velocity = new Vector2(0.0f, rb.velocity.y);
+        }
+    }
 }
