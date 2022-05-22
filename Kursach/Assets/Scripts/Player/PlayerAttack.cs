@@ -18,7 +18,7 @@ public class PlayerAttack : MonoBehaviour
     private bool isFirstAttack;
 
     private Player P;
-    
+    private PlayerStatics PS;
 
     private float lastInputTime = Mathf.NegativeInfinity;
 
@@ -37,6 +37,7 @@ public class PlayerAttack : MonoBehaviour
         anim = GetComponent<Animator>();
         anim.SetBool("canAttack", combatEnabled);
         P = GetComponent<Player>();
+        PS = GetComponent<PlayerStatics>();
     }
 
     private void CheckCombatInput()
@@ -74,7 +75,11 @@ public class PlayerAttack : MonoBehaviour
 
     private void Damage(float[]atackDitails )
     {
+        
         int direction;
+
+        PS.minusHP(attackDetails[0]);
+
         if(atackDitails[1] < transform.position.x)
         {
             direction = 1;

@@ -7,10 +7,13 @@ public class PlayerStatics : MonoBehaviour
     [SerializeField]
     private float maxHP;
     private float currentHP;
+    private GameManager GM;
+
 
     private void Start()
     {
         currentHP = maxHP;
+        GM = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     public void minusHP(float amount)
@@ -24,6 +27,7 @@ public class PlayerStatics : MonoBehaviour
 
     private void Die()
     {
+        GM.Respawn();
         Destroy(gameObject);
     }
 }
