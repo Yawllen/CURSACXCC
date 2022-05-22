@@ -19,15 +19,21 @@ public class Enemys : MonoBehaviour
         wallCheckDist,
         moveSpeed,
         maxHP,
-        knockbackDuration;
+        knockbackDuration,
+        lastDamageTime,
+        damageCooldown,
+        damage,
+        damagewidth,
+        damageheight;
 
     [SerializeField]
     private Transform
         groundCheck,
-        wallCheck;
+        wallCheck,
+        damageCheck;
 
     [SerializeField]
-    private LayerMask whatIsGround;
+    private LayerMask whatIsGround, whatIsPlayer;
     [SerializeField]
     private Vector2 knockbackSpeed;
 
@@ -36,12 +42,16 @@ public class Enemys : MonoBehaviour
         facingDirection,
         damageDirection;
 
+    private float[] attackDetails = new float[2];
+
     private float 
         currentHP,
         knockbackStartTime
         ;
 
-    private Vector2 move;
+    private Vector2 move,
+        damageBotLeft,
+        damageTopRight;
     
 
     private bool 
@@ -90,6 +100,9 @@ public class Enemys : MonoBehaviour
     {
         isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDist, whatIsGround);
         isWall = Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDist, whatIsGround);
+
+        CheckDamage();
+
         if(!isGrounded || isWall)
         {
             Flip();
@@ -211,11 +224,38 @@ public class Enemys : MonoBehaviour
         }
     }
 
+    private void CheckDamage ()
+    {
+        if(Time.time >= lastDamageTime + damageCooldown)
+        {
+            damageBotLeft.Set(damageCheck.position.x - (damagewidth / 2), damageCheck.position.y - (damageheight / 2));
+            damageTopRight.Set(damageCheck.position.x + (damagewidth / 2), damageCheck.position.y + (damageheight / 2));
+
+            Collider2D hit = Physics2D.OverlapArea(damageBotLeft, damageTopRight, whatIsPlayer);
+            if (hit != null) 
+            {
+                lastDamageTime = Time.time;
+                attackDetails[0] = damage;
+                attackDetails[1] = alive.transform.position.x;
+                hit.SendMessage("Damage", attackDetails);
+            }
+        }
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawLine(groundCheck.position, new Vector2(groundCheck.position.x, groundCheck.position.y - groundCheckDist));
-       // Gizmos.DrawLine(wallCheck.position, new Vector2(wallCheck.position.x + wallCheckDist, wallCheckDist));
         Gizmos.DrawLine(wallCheck.position, new Vector2(wallCheck.position.x, wallCheck.position.y - wallCheckDist));
 
+        Vector2 botLeft = new Vector2(damageCheck.position.x - (damagewidth / 2), damageCheck.position.y - (damageheight / 2));
+        Vector2 botRight = new Vector2(damageCheck.position.x + (damagewidth / 2), damageCheck.position.y - (damageheight / 2));
+        Vector2 topLeft = new Vector2(damageCheck.position.x - (damagewidth / 2), damageCheck.position.y + (damageheight / 2));
+        Vector2 topRight = new Vector2(damageCheck.position.x + (damagewidth / 2), damageCheck.position.y + (damageheight / 2));
+
+        Gizmos.DrawLine(botLeft, botRight);
+        Gizmos.DrawLine(botRight, topRight);
+        Gizmos.DrawLine(topRight, topLeft);
+        Gizmos.DrawLine(topLeft, botLeft);
     }
+    
 }
