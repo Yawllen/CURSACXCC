@@ -1,0 +1,576 @@
+fileFormatVersion: 2
+guid: 50925aba62d54fe47a9df49551b05b84
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8321833848811284600
+    second: Props_ForestDay_0
+  - first:
+      213: 3474287825048155893
+    second: Props_ForestDay_1
+  - first:
+      213: -7228521442525536424
+    second: Props_ForestDay_2
+  - first:
+      213: 5227294981154585359
+    second: Props_ForestDay_3
+  - first:
+      213: -939235202540302480
+    second: Props_ForestDay_4
+  - first:
+      213: 4585134196948941393
+    second: Props_ForestDay_5
+  - first:
+      213: 2104402941250282307
+    second: Props_ForestDay_6
+  - first:
+      213: -9104280854415097663
+    second: Props_ForestDay_7
+  - first:
+      213: 2545735886678212115
+    second: Props_ForestDay_8
+  - first:
+      213: -7918328740732691186
+    second: Props_ForestDay_9
+  - first:
+      213: -2253686415961879918
+    second: Props_ForestDay_10
+  - first:
+      213: -1451009347668633370
+    second: Props_ForestDay_11
+  - first:
+      213: 6461428950185757368
+    second: Props_ForestDay_12
+  - first:
+      213: -5632085691799535002
+    second: Props_ForestDay_13
+  - first:
+      213: -8019910591396558006
+    second: Props_ForestDay_14
+  - first:
+      213: 3185595791274333927
+    second: Props_ForestDay_15
+  - first:
+      213: -7158529558357375502
+    second: Props_ForestDay_16
+  - first:
+      213: -5963752537310334280
+    second: Props_ForestDay_17
+  - first:
+      213: -4688504813769219444
+    second: Props_ForestDay_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Props_ForestDay_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 253
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88718c99438e28c80800000000000000
+      internalID: -8321833848811284600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_1
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 253
+        width: 102
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6b57b8e56273030800000000000000
+      internalID: 3474287825048155893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 253
+        width: 90
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f98fedb022fab90800000000000000
+      internalID: -7228521442525536424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_3
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 253
+        width: 85
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0bb6e707151b8840800000000000000
+      internalID: 5227294981154585359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_4
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 253
+        width: 63
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f0b004f8a27f2f0800000000000000
+      internalID: -939235202540302480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_5
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 107
+        width: 96
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a33a0524ba1af30800000000000000
+      internalID: 4585134196948941393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_6
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 108
+        width: 128
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343a2815357543d10800000000000000
+      internalID: 2104402941250282307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_7
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 110
+        width: 29
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0c239acc817a180800000000000000
+      internalID: -9104280854415097663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_8
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 115
+        width: 134
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e3b611d45445320800000000000000
+      internalID: 2545735886678212115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_9
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 110
+        width: 60
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d9cd1a6f17c1290800000000000000
+      internalID: -7918328740732691186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 72
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a087d252c49b0e0800000000000000
+      internalID: -2253686415961879918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_11
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 73
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e89072afaafcdbe0800000000000000
+      internalID: -1451009347668633370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_12
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 75
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba4f35656b9ba950800000000000000
+      internalID: 6461428950185757368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_13
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 73
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6628ab347efc6d1b0800000000000000
+      internalID: -5632085691799535002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_14
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 73
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b4a65fecd83b090800000000000000
+      internalID: -8019910591396558006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_15
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 76
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6d2e08e72853c20800000000000000
+      internalID: 3185595791274333927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_16
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 14
+        width: 134
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f589ff4b4bc7ac90800000000000000
+      internalID: -7158529558357375502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_17
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 51
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b278452aae7c3da0800000000000000
+      internalID: -5963752537310334280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props_ForestDay_18
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 17
+        width: 41
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82a39f66b51feeb0800000000000000
+      internalID: -4688504813769219444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

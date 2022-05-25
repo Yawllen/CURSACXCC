@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator anim;
+    private GameManager GM;
 
     private int amountOfJumpsLeft;
 
@@ -42,7 +43,7 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         amountOfJumpsLeft = amountOfJumps;
 
-        
+        GM = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -53,6 +54,12 @@ public class Player : MonoBehaviour
         UpdateAnimatoins();
         CheckIfCanJump();
         CheckKnockback();
+
+        if (transform.position.y <= -18f)
+        {
+            GM.Respawn();
+            Destroy(gameObject);
+        }
     }
 
     private void FixedUpdate()
@@ -136,17 +143,7 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector2(movementSpeed * movementInputDirectoin, rb.velocity.y);
     }
 
-  /*  private void DisableFlip()
-    {
-        canFlip = false;
 
-    }
-
-    private void EnableFlip()
-    {
-        canFlip = true;
-    }
-  */
     private void Flip()
     {
         if(!knockback)
