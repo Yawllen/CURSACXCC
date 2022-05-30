@@ -30,7 +30,8 @@ public class Enemys : MonoBehaviour
     private Transform
         groundCheck,
         wallCheck,
-        damageCheck;
+        damageCheck,
+        playerCheck;
 
     [SerializeField]
     private LayerMask whatIsGround, whatIsPlayer;
@@ -56,7 +57,8 @@ public class Enemys : MonoBehaviour
 
     private bool 
         isGrounded,
-        isWall;
+        isWall
+        ;
 
     private GameObject alive;
     private Rigidbody2D aliveRb;
@@ -69,6 +71,7 @@ public class Enemys : MonoBehaviour
         facingDirection = 1;
         currentHP = maxHP;
         aliveAnim = alive.GetComponent<Animator>();
+       
     }
 
     private void Update()
@@ -241,6 +244,9 @@ public class Enemys : MonoBehaviour
             }
         }
     }
+
+   
+
 
     private void OnDrawGizmos()
     {
