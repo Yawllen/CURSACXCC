@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637881981707224274
-    m_Hash: 1481324690
+      ticks: 637894909610000000
+    m_Hash: 2260446868
   m_LockFileStatus:
     m_FilePath: "C:/Users/yawll/OneDrive/\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B/\u041F\u0440\u043E\u0435\u043A\u0442/Kursach/Packages/packages-lock.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637881981707224274
-    m_Hash: 2690315413
+      ticks: 637894909610000000
+    m_Hash: 540712229
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
